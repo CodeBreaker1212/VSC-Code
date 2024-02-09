@@ -25,49 +25,6 @@ body {
     padding: 0;
 }
 
-.dropdown > .link:focus,
-.link:hover {
-    color: black;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.Bdropdown-menu,
-.Adropdown-menu {
-    /* Common dropdown styles */
-    position: absolute;
-    left: 0;
-    top: calc(100% + .5rem);
-    background-color: white;
-    padding: .75rem;
-    border-radius: .5rem;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-    width: 195px;
-    display: none; /* Hide dropdowns by default */
-}
-
-/* Additional styles for each dropdown */
-.Bdropdown-menu.show,
-.Adropdown-menu.show {
-    opacity: 1;
-    pointer-events: auto;
-    display: block; /* Show dropdowns when 'show' class is applied */
-}
-
-/* Ensure links are on separate lines */
-.dropdown-link {
-    display: block;
-    margin-bottom: 8px;
-    text-decoration: none;
-    color: black;
-}
-
 .bordered-section {
     border: 2px solid #000; 
     border-radius: .75rem;
@@ -89,3 +46,19 @@ body {
     display: block; 
     margin-left: 20px; 
   }
+
+a:link {
+    color: grey;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:active {
+    color: grey;
+}
