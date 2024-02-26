@@ -84,6 +84,10 @@ function animate(){
     } else if (keys.d.pressed && lastKey == "d") {
         player.velocity.x = 1 
     }
+
+    if (keys.w.pressed && lastKey == 'w') {
+        player.velocity.y = -5
+    }
 }
 
 animate()
